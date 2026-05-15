@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: lab07-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DB_HOST
+        value: bnorzxkuiq0iescu5dcx-mysql.services.clever-cloud.com
+      - key: DB_USER
+        value: ufipgtsaomyqu0np
+      - key: DB_PASSWORD
+        value: qrSsV1utYukWxWh7XXtl
+      - key: DB_NAME
+        value: bnorzxkuiq0iescu5dcx
+      - key: DB_DIALECT
+        value: mysql
